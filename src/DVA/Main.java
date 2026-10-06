@@ -1,8 +1,4 @@
 package DVA;
-
-import java.util.Scanner;
-
-public class Main {
 /*
 2. Napiš program na počítání, kolikrát se ozvalo baf. Vytvoř metodu int
 pocetBaf(String text). Metoda vrátí počet všech výskytů části textu baf bez ohledu
@@ -16,7 +12,20 @@ Testovací data:
 • ""
 • null
  */
-    static void main(String args[]) {
+public class Main {
 
+    public static void main(String[] args) {
+
+        String[] texty = {
+                "BAF-baf! BAf",
+                "ticho",
+                "baFbaf",
+                "",
+                null
+        };
+
+        for (String text : texty) {
+            System.out.println(Baf.pocetBaf(text));
+        }
     }
 }

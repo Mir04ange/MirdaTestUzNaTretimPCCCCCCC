@@ -23,15 +23,13 @@ public class Main {
         for (IFiltrZprav filtr : filtry) {
 
             System.out.println("Filtr: " + filtr.getClass().getSimpleName());
-
             int pocet = 0;
-
             for (String zprava : zpravy) {
-
                 if (filtr.prijima(zprava)) {
                     System.out.println(zprava);
                     pocet++;
                 }
+                else ; //nic;
             }
 
             System.out.println("Pocet prijatych zprav: " + pocet);

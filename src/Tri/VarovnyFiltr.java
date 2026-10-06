@@ -9,7 +9,7 @@ public class VarovnyFiltr implements IFiltrZprav {
             return false;
         }
 
-        String upraveny = text.trim();
+        String upraveny = text.strip();
         if (upraveny.isEmpty()) {
             return false;
         }

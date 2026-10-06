@@ -1,7 +1,7 @@
 package DVA;
 
 public class Baf {
- // pozice je opice u meeeee HAHA
+ // pozice je opice u meeeee. :)
     public static int pocetBaf(String text) {
         if (text == null || text.isEmpty()) {
             return 0;
